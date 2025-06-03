@@ -10,3 +10,8 @@ function digitBtn(button){
         document.getElementById("inputBox").value= currentValue + button;
     }
 }
+
+function acBtn(){
+    document.getElementById("inputBox").value = 0;
+    newLine = true;
+}
