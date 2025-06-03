@@ -46,4 +46,6 @@ function equalsBtn(){
             break;
     }
     document.getElementById("inputBox").value = finalTotal;
+    value1 = 0;
+    newLine = true;
 }
