@@ -20,6 +20,6 @@ function acBtn(){
 
 function operatorBtn(operator){
     currentOperator = operator;
-    value1 = parseInt(Element.getElementById("inputBox").value);
+    value1 = parseInt(document.getElementById("inputBox").value);
     newLine = true;
 }
