@@ -23,3 +23,27 @@ function operatorBtn(operator){
     value1 = parseInt(document.getElementById("inputBox").value);
     newLine = true;
 }
+
+function equalsBtn(){
+    var value2 = parseInt(document.getElementById("inputBox").value);
+    var finalTotal;
+
+    switch (currentOperator) {
+        case "+":
+            finalTotal = value1 + value2;
+            break;
+    
+        case "-":
+            finalTotal = value1 - value2;
+            break;
+
+        case "/":
+            finalTotal = value1 / value2;
+            break;
+
+        case "x": 
+            finalTotal = value1 * value2;
+            break;
+    }
+    document.getElementById("inputBox").value = finalTotal;
+}
