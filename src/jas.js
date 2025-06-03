@@ -1,3 +1,12 @@
+var newLine = true;
+
 function digitBtn(button){
-    document.getElementById("inputBox").value=button;
+    if(newLine){
+        document.getElementById("inputBox").value = button;
+        newLine = false;
+    }
+    else{
+        var currentValue = document.getElementById("inputBox").value;
+        document.getElementById("inputBox").value= currentValue + button;
+    }
 }
