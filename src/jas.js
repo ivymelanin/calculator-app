@@ -1,4 +1,6 @@
 var newLine = true;
+var value1;
+var currentOperator;
 
 function digitBtn(button){
     if(newLine){
@@ -13,5 +15,11 @@ function digitBtn(button){
 
 function acBtn(){
     document.getElementById("inputBox").value = 0;
+    newLine = true;
+}
+
+function operatorBtn(operator){
+    currentOperator = operator;
+    value1 = parseInt(Element.getElementById("inputBox").value);
     newLine = true;
 }
